@@ -1184,14 +1184,15 @@ class SGDRegressor(BaseSGDRegressor, _LearntSelectorMixin):
 
     warm_start : bool, optional
         When set to True, reuse the solution of the previous call to fit as
-        initialization, otherwise, just erase the previous solution.
+        initialization, otherwise, just erase the previous solution
+        [default True].
 
     average : bool or int, optional
         When set to True, computes the averaged SGD weights and stores the
         result in the ``coef_`` attribute. If set to an int greater than 1,
         averaging will begin once the total number of samples seen reaches
         average. So ``average=10`` will begin averaging after seeing 10
-        samples.
+        samples [default False].
 
     Attributes
     ----------
